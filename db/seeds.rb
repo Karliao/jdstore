@@ -23,6 +23,20 @@ u.save
 p = Product.new
 p.title = "Aeron"
 p.description = "独特的外观、先进的人体工程学理念、94%的材料可降解回收，Aeron座椅彻底改变了人们关于办公椅的思维定式。"
-p.quantity = "111111"
+p.quantity = "11"
 p.price = 8919.00
+p.save
+
+p = Product.new
+p.title = "okamura"
+p.description = "冈村okamura人体工学电脑椅子"
+p.quantity = "2"
+p.price = 2610.00
+p.save
+
+p = Product.new
+p.title = "DXRACER"
+p.description = "迪锐克斯FE08/FL08人体工学电脑椅家用转椅电竞椅休闲游戏椅可躺办公椅"
+p.quantity = "3"
+p.price = 1399.00
 p.save
