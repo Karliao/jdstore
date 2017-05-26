@@ -40,6 +40,10 @@ gem 'mini_magick'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+
+  # below for debug, ref https://fullstack.xinshengdaxue.com/posts/1203
+  gem 'pry'
+  gem 'awesome_rails_console'
 end
 
 group :development do
