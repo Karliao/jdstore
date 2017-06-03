@@ -9,7 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body id="<%= "admin-#{controller_name}-#{action_name}"%>">
     <div class="container">
       <%= render "common/navbar"%>
       <div class="row">
