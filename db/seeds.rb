@@ -20,6 +20,13 @@ u.password_confirmation = "123456"
 u.is_admin = true
 u.save
 
+u = User.new
+u.email = "a@a.com"
+u.password = "111111"
+u.password_confirmation = "111111"
+u.is_admin = false
+u.save
+
 Product.create!(
     title: "乌合之众:大众心理研究",
     description: "《乌合之众:大众心理研究》是解析群体心理的经典名著，虽然是一部学术性著作，但语言生动流畅，分析鞭辟入里，入木三分。因此，《乌合之众》一经问世，便广受欢迎，已被译成十几种语。《乌合之众:大众心理研究》颠覆了人们通常对群体的认识，将群体的特点剖析得淋漓尽致，让人先是惊异，后是佩服。",
