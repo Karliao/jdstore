@@ -1,6 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # https://stackoverflow.com/questions/21974190/background-image-not-showing-up-in-heroku
+  config.serve_static_assets = true
+  config.assets.compile = true
+
   #SendCloud
     config.action_mailer.default_url_options = { :host => 'haoshu.herokuapp.com'}
     config.action_mailer.delivery_method = :smtp
