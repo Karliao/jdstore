@@ -42,6 +42,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    animate-rails (1.0.10)
+      rails
     annotate (2.7.2)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
@@ -232,6 +234,7 @@ PLATFORMS
 
 DEPENDENCIES
   aasm
+  animate-rails
   annotate
   awesome_rails_console
   bootstrap-sass
