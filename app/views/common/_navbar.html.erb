@@ -11,7 +11,11 @@
 
                 </button>
                 <a class="navbar-brand" href="/">
-                    <img src="/assets/logo.png" style="margin:10px 0px 0px 10px;height:80%;" alt="//">
+                    <span style="display: inline-block;">
+                        <img src="/assets/logo.png" style="margin:10px 0px 0px 10px;height:80%;" alt="//" />
+                    </span>
+                    <span style="color: #f55573;">BookFair</span>
+
                 </a>
             </div>
 
@@ -53,23 +57,16 @@
                 </ul>
 
                 <ul class="nav navbar-nav menu-effect">
-                    <li class="active">
-                        <a href="/">主页</a>
-                    </li>
+                    <div style="display: inline-block;margin:10px 0px 0px 10px;">
+                        <%= form_tag(products_path, :method => "get", id: "search-form") do %>
+                            <%= text_field_tag :search, params[:search], placeholder: "请输入关键字" %>
+                            <%= button_tag(type: "submit", class: "btn btn-default") do %>
+                                <i class="fa fa-search"></i>
+                            <% end %>
+                        <% end %>
+                    </div>
                     <li class="active">
                         <%= link_to("挑选好书", products_path) %>
-                    </li>
-                    <li class="active">
-                        <a href="#menu_features">特色服务</a>
-                    </li>
-                    <li class="active">
-                        <a href="#menu_books">经典推荐</a>
-                    </li>
-                    <li class="active">
-                        <a href="#menu_price">精选套餐</a>
-                    </li>
-                    <li class="active">
-                        <a href="#menu_subscribe">邮件订阅</a>
                     </li>
                 </ul>
 

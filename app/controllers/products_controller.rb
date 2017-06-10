@@ -1,6 +1,15 @@
 class ProductsController < ApplicationController
+
   def index
-    @products = Product.all
+    # @products = Product.all
+    
+    #Create a Simple Search Form in Rails
+    #http://www.rymcmahon.com/articles/2
+    if params[:search]
+      @products = Product.search(params[:search]).order("created_at DESC")
+    else
+      @products = Product.all.order("created_at DESC")
+    end
   end
 
   def show

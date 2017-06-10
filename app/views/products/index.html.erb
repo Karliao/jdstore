@@ -1,6 +1,9 @@
 <div class="row">
 
 <% # binding.pry %>
+    <% if @products.blank? %>
+    <h4>抱歉，没有找到与“<%= params[:search] %>”相关的书籍</h4>
+    <% end %>
 
   <% @products.each do |product| %>
     <div class="col-xs-6 col-md-3">
